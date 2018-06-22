@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Cores do Sistema-->
+    <color name = "corPrimaria">#03A9F4</color>
+    <color name = "corPrimariaEscura">#03A9F4</color>
+    <color name = "corRealce">#FFAA00</color>
+
+    <!--Minhas cores:-->
+    <color name = "corRoxo_6E2B77">#6E2B77</color>
+    <color name = "corRoxo_3D2B40">#3D2B40</color>
+    <color name = "corRoxo_3A2240">#3A2240</color>
+    <color name = "corAzul_40AAB9">#40AAB9</color>
+    <color name = "corAzul_00BCC9">#00BCC9</color>
+    <color name = "corVermelho_E5615C">#E5615C</color>
+    <color name = "corLaranja_FFAA00">#FFAA00</color>
+    <color name = "corVerde_9ED230">#9ED230</color>
+    <color name = "corAzul_4267B2">#4267B2</color>
+    <color name = "corBranco_FFFFFF">#FFFFFF</color>
+    <color name = "corPreto_000000">#000000</color>
+    <color name = "corCinza_757575">#757575</color>
+    <color name = "corCinza_808080">#808080</color>
+    <color name = "corCinza_040000">#040000</color>
+</resources>

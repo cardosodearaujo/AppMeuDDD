@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Meu DDD</string>
+    <string name="activity_login_txwInformacao"><b>Informe suas credenciais abaixo:</b></string>
+    <string name="activity_login_txwEsqueciSenha"><u>Esqueci minha senha</u></string>
+    <string name="activity_login_btnLogin">Login</string>
+    <string name="activity_login_btnCadastrar">Cadastrar</string>
+    <string name="activity_login_edtUsuario">E-mail</string>
+    <string name="activity_login_edtSenha">Senha</string>
+    <string name="activity_forgot_password_edtEmail">E-mail</string>
+    <string name="activity_forgot_password_txwInformacao"><b>Informe seu e-mail abaixo:</b></string>
+    <string name="activity_forgot_password_btnEnviar">Enviar</string>
+</resources>
