@@ -1,12 +1,25 @@
 <resources>
     <string name="app_name">Meu DDD</string>
+
     <string name="activity_login_txwInformacao"><b>Informe suas credenciais abaixo:</b></string>
     <string name="activity_login_txwEsqueciSenha"><u>Esqueci minha senha</u></string>
     <string name="activity_login_btnLogin">Login</string>
     <string name="activity_login_btnCadastrar">Cadastrar</string>
     <string name="activity_login_edtUsuario">E-mail</string>
     <string name="activity_login_edtSenha">Senha</string>
+
     <string name="activity_forgot_password_edtEmail">E-mail</string>
     <string name="activity_forgot_password_txwInformacao"><b>Informe seu e-mail abaixo:</b></string>
     <string name="activity_forgot_password_btnEnviar">Enviar</string>
+    <string name="activity_forgot_password_recuperar_senha">Recuperar senha</string>
+
+    <string name="activity_user_edtSenha">Senha</string>
+    <string name="activity_user_informacao">Informe seus dados de usuário:</string>
+    <string name="activity_user_edtNome">Nome</string>
+    <string name="activity_user_nome">Cadastro de usuário</string>
+    <string name="activity_user_cadastrar">Cadastrar</string>
+
+    <string name="activity_menu_por_cidade">Por Cidade</string>
+    <string name="activity_menu_por_ddd">Por DDD</string>
+    <string name="activity_menu_opcoes">Opções de consulta</string>
 </resources>

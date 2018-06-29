@@ -20,4 +20,9 @@ class LoginActivity : AppCompatActivity() {
     fun onClickCadastrar(view: View?){
         FunctionsApp.iniciarActivity(this@LoginActivity, UserActivity::class.java,null)
     }
+
+    fun onClickLogin(view: View) {
+        FunctionsApp.iniciarActivity(this@LoginActivity,MenuActivity::class.java,null)
+        FunctionsApp.fecharActivity(this@LoginActivity)
+    }
 }

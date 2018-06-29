@@ -19,4 +19,8 @@ public class UserActivity extends AppCompatActivity {
     public  void onClickClose(View view){
         FunctionsApp.fecharActivity(UserActivity.this);
     }
+
+    public void onClickCadastrar(View view){
+        
+    }
 }

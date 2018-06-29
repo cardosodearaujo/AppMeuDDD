@@ -12,20 +12,29 @@
         android:roundIcon="@mipmap/ic_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name=".Activitys.SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".Activitys.LoginActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".Activitys.ForgotPasswordActivity" />
-        <activity android:name=".Activitys.UserActivity"></activity>
+
+        <activity android:name=".Activitys.ForgotPasswordActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activitys.UserActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Activitys.MenuActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
