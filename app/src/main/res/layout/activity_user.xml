@@ -47,6 +47,7 @@
             android:gravity="right|center">
 
             <ImageButton
+                android:id="@+id/idBtnFechar"
                 android:layout_width="43dp"
                 android:layout_height="43dp"
                 android:background="@mipmap/ic_close"
@@ -70,10 +71,11 @@
         android:layout_gravity="center">
 
         <EditText
+            android:id="@+id/idEdtNome"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:hint="@string/activity_user_edtNome"
-            android:inputType="textEmailAddress" />
+            android:inputType="text" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -82,6 +84,7 @@
         android:layout_gravity="center">
 
         <EditText
+            android:id="@+id/idEdtEmail"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:hint="@string/activity_login_edtUsuario"
@@ -94,14 +97,16 @@
         android:layout_gravity="center">
 
         <EditText
+            android:id="@+id/idEdtSenha"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:hint="@string/activity_user_edtSenha"
-            android:inputType="textEmailAddress" />
+            android:inputType="textPassword" />
     </android.support.design.widget.TextInputLayout>
 
 
     <Button
+        android:id="@+id/idBtnCadastrar"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_margin="5dp"

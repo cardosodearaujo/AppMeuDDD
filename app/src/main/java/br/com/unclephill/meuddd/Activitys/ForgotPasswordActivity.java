@@ -15,6 +15,10 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         setContentView(R.layout.activity_forgot_password);
     }
 
+    public void onClickEnviar(View view){
+
+    }
+
     public void onClickClose(View view){
         FunctionsApp.fecharActivity(ForgotPasswordActivity.this);
     }
