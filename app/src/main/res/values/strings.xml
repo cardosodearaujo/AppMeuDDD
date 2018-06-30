@@ -27,4 +27,9 @@
     <string name="fragment_city_consultar">Consultar</string>
     <string name="fragment_ddd_ddd">Informe o DDD</string>
 
+    <string name="card_view_ddd_cidades_cidade">Cidade:</string>
+    <string name="card_view_ddd_cidades_operadora">Operadora:</string>
+    <string name="card_view_ddd_cidades_estado">UF:</string>
+    <string name="card_view_ddd_cidades_DDD">DDD:</string>
+
 </resources>

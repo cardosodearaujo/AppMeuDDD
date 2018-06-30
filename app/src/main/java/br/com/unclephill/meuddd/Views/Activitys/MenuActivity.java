@@ -1,6 +1,13 @@
 package br.com.unclephill.meuddd.Views.Activitys;
 
+import android.database.Cursor;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.LoaderManager;
+import android.support.v4.content.Loader;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -10,6 +17,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -20,11 +28,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.com.unclephill.meuddd.App.FunctionsApp;
+import br.com.unclephill.meuddd.App.RecyclerViewTouchListenerApp;
 import br.com.unclephill.meuddd.R;
 import br.com.unclephill.meuddd.Views.Fragments.CityFragment;
 import br.com.unclephill.meuddd.Views.Fragments.DDDFragment;
 
-public class MenuActivity extends AppCompatActivity {
+public class MenuActivity extends AppCompatActivity{
 
     private TabLayout idTabLayout;
     private ViewPager idViewPager;
@@ -108,9 +117,5 @@ public class MenuActivity extends AppCompatActivity {
 
     public void onClickConsultarCidade(View view){
         Toast.makeText(MenuActivity.this,"Cidade", Toast.LENGTH_SHORT).show();
-    }
-
-    public void onClickConsultarDDD(View view){
-        Toast.makeText(MenuActivity.this,"DDD", Toast.LENGTH_SHORT).show();
     }
 }
