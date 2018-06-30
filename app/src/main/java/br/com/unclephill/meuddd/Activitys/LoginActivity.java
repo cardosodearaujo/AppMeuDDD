@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import br.com.unclephill.meuddd.API.API;
+import br.com.unclephill.meuddd.App.FunctionsApp;
 import br.com.unclephill.meuddd.Object.LoginObject;
 import br.com.unclephill.meuddd.R;
 import retrofit2.Call;
@@ -83,8 +84,17 @@ public class LoginActivity extends AppCompatActivity{
                     public void onResponse(Call<LoginObject> call, Response<LoginObject> response) {
                         closePgDialog();
                         if (response.isSuccessful()){
-                            iniciarActivity(LoginActivity.this,MenuActivity.class,null);
-                            fecharActivity(LoginActivity.this);
+                            if (response.body().getId() > 0){
+                                FunctionsApp.User = response.body();
+                                iniciarActivity(LoginActivity.this,MenuActivity.class,null);
+                                fecharActivity(LoginActivity.this);
+                            }else{
+                                modal(LoginActivity.this,
+                                        "Atenção!",
+                                        "Login ou senha do usuário são inválidos!",
+                                        "OK");
+                            }
+
                         }else{
                             modal(LoginActivity.this,
                                     "Atenção!",response.message(),

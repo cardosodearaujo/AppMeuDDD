@@ -7,6 +7,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
+import br.com.unclephill.meuddd.Object.LoginObject;
+import br.com.unclephill.meuddd.Object.UserObject;
+
 public class FunctionsApp {
     public static void iniciarActivity(Context context, Class classe, Bundle paramentros){
         Intent intent = new Intent(context,classe);
@@ -19,6 +22,8 @@ public class FunctionsApp {
     }
 
     public static ProgressDialog PG_DIALOG;
+
+    public static LoginObject User = new LoginObject();
 
     public static void showPgDialog(Context context){
         PG_DIALOG = new ProgressDialog(context);

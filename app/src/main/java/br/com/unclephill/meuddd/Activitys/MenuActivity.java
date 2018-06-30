@@ -19,6 +19,8 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 import br.com.unclephill.meuddd.App.FunctionsApp;
 import br.com.unclephill.meuddd.R;
 
@@ -26,6 +28,7 @@ public class MenuActivity extends AppCompatActivity {
 
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
+    private TextView idTxwNomeUsuario;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +46,9 @@ public class MenuActivity extends AppCompatActivity {
 
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
+
+        this.idTxwNomeUsuario = (TextView) findViewById(R.id.idTxwNomeUsuario);
+        this.idTxwNomeUsuario.setText("<b>Usuário:</b> " + FunctionsApp.User.getNome());
 
     }
 
