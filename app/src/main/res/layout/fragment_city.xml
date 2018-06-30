@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.unclephill.meuddd.Views.Fragments.CityFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top">
+
+            <EditText
+                android:id="@+id/idEdtCidade"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/fragment_city_cidade"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/idBtnCadastrar"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/bt_rounded_orange"
+            android:onClick="onClickConsultarCidade"
+            android:text="@string/fragment_city_consultar"
+            android:textAllCaps="false"
+            android:textColor="@color/corBranco_FFFFFF"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/idRwCidades"
+            android:layout_margin="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+</FrameLayout>

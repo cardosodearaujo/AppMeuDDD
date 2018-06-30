@@ -14,7 +14,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".Activitys.SplashActivity"
+            android:name="br.com.unclephill.meuddd.Views.Activitys.SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,17 +22,17 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Activitys.LoginActivity"
+        <activity android:name="br.com.unclephill.meuddd.Views.Activitys.LoginActivity"
             android:screenOrientation="portrait"/>
 
-        <activity android:name=".Activitys.ForgotPasswordActivity"
+        <activity android:name="br.com.unclephill.meuddd.Views.Activitys.ForgotPasswordActivity"
             android:screenOrientation="portrait"/>
 
-        <activity android:name=".Activitys.UserActivity"
+        <activity android:name="br.com.unclephill.meuddd.Views.Activitys.UserActivity"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name=".Activitys.MenuActivity"
+            android:name="br.com.unclephill.meuddd.Views.Activitys.MenuActivity"
             android:screenOrientation="portrait"/>
     </application>
 

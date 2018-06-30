@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="br.com.unclephill.meuddd.Activitys.MenuActivity">
+    tools:context=".Views.Activitys.MenuActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
@@ -65,18 +66,19 @@
         </android.support.v7.widget.Toolbar>
 
 
-        
         <android.support.design.widget.TabLayout
-            android:id="@+id/tabs"
+            android:id="@+id/idTabLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <android.support.design.widget.TabItem
+                android:id="@+id/idTabPorCidade"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/activity_menu_por_cidade" />
 
             <android.support.design.widget.TabItem
+                android:id="@+id/idTabPorDDD"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/activity_menu_por_ddd" />
@@ -86,7 +88,7 @@
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/container"
+        android:id="@+id/idViewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
@@ -94,7 +96,7 @@
     <TextView
         android:id="@+id/idTxwNomeUsuario"
         android:layout_width="match_parent"
-        android:layout_height="13dp"
+        android:layout_height="15dp"
         android:layout_gravity="bottom"
         android:background="@color/corRealce"
         android:gravity="bottom"
@@ -102,5 +104,5 @@
         android:text=""
         android:textColor="@color/corPreto_000000"
         android:textSize="12dp"
-        android:textStyle="italic" />
+        android:textStyle="italic|bold" />
 </android.support.design.widget.CoordinatorLayout>

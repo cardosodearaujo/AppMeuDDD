@@ -2,6 +2,9 @@ package br.com.unclephill.meuddd.App;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -43,5 +46,12 @@ public class FunctionsApp {
                 .setTitle(titulo)
                 .setMessage(menssagem)
                 .setNeutralButton(mensagemBotao, null).show();
+    }
+
+    public static void iniciarFragment(Fragment fragment, int id, FragmentManager fragmentManager){
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(id,fragment);
+        fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+        fragmentTransaction.commit();
     }
 }

@@ -22,4 +22,9 @@
     <string name="activity_menu_por_cidade">Por Cidade</string>
     <string name="activity_menu_por_ddd">Por DDD</string>
     <string name="activity_menu_opcoes">Opções de consulta</string>
+
+    <string name="fragment_city_cidade">Informe a cidade</string>
+    <string name="fragment_city_consultar">Consultar</string>
+    <string name="fragment_ddd_ddd">Informe o DDD</string>
+
 </resources>

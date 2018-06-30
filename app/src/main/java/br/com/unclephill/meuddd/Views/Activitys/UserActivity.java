@@ -1,4 +1,4 @@
-package br.com.unclephill.meuddd.Activitys;
+package br.com.unclephill.meuddd.Views.Activitys;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,10 +8,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import br.com.unclephill.meuddd.API.API;
-import br.com.unclephill.meuddd.App.FunctionsApp;
 import br.com.unclephill.meuddd.Object.UserObject;
 import br.com.unclephill.meuddd.R;
-import kotlin.Function;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

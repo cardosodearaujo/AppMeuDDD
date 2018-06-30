@@ -7,7 +7,7 @@
     android:layout_gravity="center"
     android:gravity="center|top"
     android:orientation="vertical"
-    tools:context=".Activitys.UserActivity">
+    tools:context=".Views.Activitys.UserActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"

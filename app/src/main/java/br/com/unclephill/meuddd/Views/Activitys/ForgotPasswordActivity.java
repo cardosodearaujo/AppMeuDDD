@@ -1,4 +1,4 @@
-package br.com.unclephill.meuddd.Activitys;
+package br.com.unclephill.meuddd.Views.Activitys;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,7 +16,6 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 import static br.com.unclephill.meuddd.App.FunctionsApp.closePgDialog;
-import static br.com.unclephill.meuddd.App.FunctionsApp.fecharActivity;
 import static br.com.unclephill.meuddd.App.FunctionsApp.modal;
 import static br.com.unclephill.meuddd.App.FunctionsApp.showPgDialog;
 
