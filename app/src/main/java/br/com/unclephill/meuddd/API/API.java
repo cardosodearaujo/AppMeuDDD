@@ -1,5 +1,6 @@
 package br.com.unclephill.meuddd.API;
 
+import br.com.unclephill.meuddd.Object.LoginObject;
 import br.com.unclephill.meuddd.Object.RecoverUserObject;
 import br.com.unclephill.meuddd.Object.UserObject;
 import retrofit2.Call;
@@ -21,5 +22,10 @@ public class API {
     public static Call<RecoverUserObject> setRecoverUser(RecoverUserObject recoverUserObject) {
         RecoverUserAPI recoverUserAPI = RETROFIT.create(RecoverUserAPI.class);
         return recoverUserAPI.setRecoverUser(recoverUserObject);
+    }
+
+    public static Call<LoginObject> setLogin(LoginObject loginObject) {
+        LoginAPI loginAPI = RETROFIT.create(LoginAPI.class);
+        return loginAPI.setLogin(loginObject);
     }
 }
