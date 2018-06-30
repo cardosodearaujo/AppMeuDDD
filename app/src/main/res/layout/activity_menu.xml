@@ -56,7 +56,7 @@
 
                 <ImageButton
                     android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_height="27dp"
                     android:background="@mipmap/ic_logout"
                     android:gravity="right"
                     android:onClick="onClickLogOut" />
@@ -94,13 +94,13 @@
     <TextView
         android:id="@+id/idTxwNomeUsuario"
         android:layout_width="match_parent"
-        android:layout_height="16dp"
-        android:paddingLeft="15dp"
-        android:text="Usuário: Everaldo Cardoso de Araújo"
-        android:textSize="12dp"
-        android:textColor="@color/corPreto_000000"
-        android:background="@color/corRealce"
+        android:layout_height="13dp"
         android:layout_gravity="bottom"
-        android:textStyle="italic"
-        android:gravity="bottom"/>
+        android:background="@color/corRealce"
+        android:gravity="bottom"
+        android:paddingLeft="15dp"
+        android:text=""
+        android:textColor="@color/corPreto_000000"
+        android:textSize="12dp"
+        android:textStyle="italic" />
 </android.support.design.widget.CoordinatorLayout>

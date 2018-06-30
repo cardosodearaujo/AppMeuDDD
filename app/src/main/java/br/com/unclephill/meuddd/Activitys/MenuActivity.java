@@ -48,7 +48,7 @@ public class MenuActivity extends AppCompatActivity {
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
 
         this.idTxwNomeUsuario = (TextView) findViewById(R.id.idTxwNomeUsuario);
-        this.idTxwNomeUsuario.setText("<b>Usuário:</b> " + FunctionsApp.User.getNome());
+        this.idTxwNomeUsuario.setText("Usuário: " + FunctionsApp.User.getNome());
 
     }
 
