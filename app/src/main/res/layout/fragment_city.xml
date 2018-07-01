@@ -21,7 +21,7 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:hint="@string/fragment_city_cidade"
-                android:inputType="text" />
+                android:inputType="textAutoComplete|textAutoCorrect" />
         </android.support.design.widget.TextInputLayout>
 
         <Button

@@ -1,8 +1,6 @@
 package br.com.unclephill.meuddd.Views.Fragments;
 
-import android.content.Context;
 import android.database.Cursor;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -19,8 +17,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import java.util.List;
 
@@ -28,9 +24,7 @@ import br.com.unclephill.meuddd.API.API;
 import br.com.unclephill.meuddd.Adapter.DDDCidadesAdapter;
 import br.com.unclephill.meuddd.App.RecyclerViewTouchListenerApp;
 import br.com.unclephill.meuddd.Object.DDDCityObject;
-import br.com.unclephill.meuddd.Object.LoginObject;
 import br.com.unclephill.meuddd.R;
-import br.com.unclephill.meuddd.Views.Activitys.LoginActivity;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -89,14 +83,14 @@ public class CityFragment extends Fragment implements RecyclerViewTouchListenerA
                 showPgDialog(getContext());
 
                 DDDCityObject dddCityObject = new DDDCityObject();
-                dddCityObject.setDdd(idEdtCidade.getText().toString());
-                geCidadesFromAPI(dddCityObject);
+                dddCityObject.setCidade(idEdtCidade.getText().toString());
+                geDDDFromAPI(dddCityObject);
             }
         });
     }
 
-    private void geCidadesFromAPI(DDDCityObject dddCityObject){
-        API.getCidades(dddCityObject)
+    private void geDDDFromAPI(DDDCityObject dddCityObject){
+        API.getDDD(dddCityObject)
                 .enqueue(new Callback<List<DDDCityObject>>() {
                     @Override
                     public void onResponse(Call<List<DDDCityObject>> call, Response<List<DDDCityObject>> response) {

@@ -17,27 +17,27 @@
             android:layout_gravity="center|top">
 
             <EditText
-                android:id="@+id/idEdtCidade"
+                android:id="@+id/idEdtDDD"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:hint="@string/fragment_ddd_ddd"
-                android:inputType="text"/>
+                android:inputType="number"
+                android:maxLength="3"/>
         </android.support.design.widget.TextInputLayout>
 
         <Button
-            android:id="@+id/idBtnCadastrar"
+            android:id="@+id/idBtnConsultar"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_margin="5dp"
             android:background="@drawable/bt_rounded_orange"
-            android:onClick="onClickConsultarDDD"
             android:text="@string/fragment_city_consultar"
             android:textAllCaps="false"
             android:textColor="@color/corBranco_FFFFFF"
             android:textStyle="bold" />
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/idRwCidades"
+            android:id="@+id/idRwDDDCidades"
             android:layout_margin="7dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
