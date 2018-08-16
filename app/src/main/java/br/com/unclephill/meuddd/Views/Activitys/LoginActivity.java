@@ -36,10 +36,10 @@ public class LoginActivity extends AppCompatActivity{
     }
 
     private void inflar(){
-        this.idEdtEmail = (EditText) findViewById(R.id.idEdtEmail);
-        this.idEdtSenha = (EditText)  findViewById(R.id.idEdtSenha);
+        this.idEdtEmail = (EditText) findViewById(R.id.idEdtEmailLG);
+        this.idEdtSenha = (EditText)  findViewById(R.id.idEdtSenhaLG);
         this.idBtnLogin = (Button) findViewById(R.id.idBtnLogin);
-        this.idBtnCadastrar =  (Button) findViewById(R.id.idBtnCadastrar);
+        this.idBtnCadastrar =  (Button) findViewById(R.id.idBtnCadastrarLG);
     }
 
     public void onClickLogin(View view){

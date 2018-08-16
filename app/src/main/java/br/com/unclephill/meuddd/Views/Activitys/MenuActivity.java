@@ -21,6 +21,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,6 +40,7 @@ public class MenuActivity extends AppCompatActivity{
     private ViewPager idViewPager;
     private TextView idTxwNomeUsuario;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +56,7 @@ public class MenuActivity extends AppCompatActivity{
 
         this.idTxwNomeUsuario = (TextView) findViewById(R.id.idTxwNomeUsuario);
         this.idTxwNomeUsuario.setText("Usuário: " + FunctionsApp.User.getNome());
+
     }
 
     private void setSetupViewPager(ViewPager viewPager){

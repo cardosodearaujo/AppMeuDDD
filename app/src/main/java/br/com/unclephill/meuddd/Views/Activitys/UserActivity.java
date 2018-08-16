@@ -35,9 +35,9 @@ public class UserActivity extends AppCompatActivity {
 
     private void inflar(){
         this.idEdtNome = (EditText) findViewById(R.id.idEdtNome);
-        this.idEdtEmail = (EditText) findViewById(R.id.idEdtEmail);
-        this.idEdtSenha = (EditText) findViewById(R.id.idEdtSenha);
-        this.idBtnCadastrar = (Button) findViewById(R.id.idBtnCadastrar);
+        this.idEdtEmail = (EditText) findViewById(R.id.idEdtEmailCU);
+        this.idEdtSenha = (EditText) findViewById(R.id.idEdtSenhaCU);
+        this.idBtnCadastrar = (Button) findViewById(R.id.idBtnCadastrarCU);
     }
 
     public void onClickCadastrar(View view){

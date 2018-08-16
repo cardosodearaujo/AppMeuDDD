@@ -5,6 +5,7 @@ public class DDDCityObject {
     private String estado;
     private String cidade;
     private String operadora;
+    private String UF;
 
     public String getDdd() {
         return ddd;
@@ -36,5 +37,13 @@ public class DDDCityObject {
 
     public void setOperadora(String operadora) {
         this.operadora = operadora;
+    }
+
+    public String getUF() {
+        return UF;
+    }
+
+    public void setUF(String UF) {
+        this.UF = UF;
     }
 }

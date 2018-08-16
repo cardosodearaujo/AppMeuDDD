@@ -84,7 +84,7 @@
         android:layout_gravity="center">
 
         <EditText
-            android:id="@+id/idEdtEmail"
+            android:id="@+id/idEdtEmailCU"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:hint="@string/activity_login_edtUsuario"
@@ -97,7 +97,7 @@
         android:layout_gravity="center">
 
         <EditText
-            android:id="@+id/idEdtSenha"
+            android:id="@+id/idEdtSenhaCU"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:hint="@string/activity_user_edtSenha"
@@ -106,7 +106,7 @@
 
 
     <Button
-        android:id="@+id/idBtnCadastrar"
+        android:id="@+id/idBtnCadastrarCU"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_margin="5dp"

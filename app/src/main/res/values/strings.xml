@@ -24,6 +24,7 @@
     <string name="activity_menu_opcoes">Opções de consulta</string>
 
     <string name="fragment_city_cidade">Informe a cidade</string>
+    <string name="fragment_city_uf">Informe o estado:</string>
     <string name="fragment_city_consultar">Consultar</string>
     <string name="fragment_ddd_ddd">Informe o DDD</string>
 
@@ -31,5 +32,36 @@
     <string name="card_view_ddd_cidades_operadora">Operadora:</string>
     <string name="card_view_ddd_cidades_estado">UF:</string>
     <string name="card_view_ddd_cidades_DDD">DDD:</string>
+
+    <string-array name="fragment_uf">
+        <item>""</item>
+        <item>AC</item>
+        <item>AL</item>
+        <item>AM</item>
+        <item>AP</item>
+        <item>BA</item>
+        <item>CE</item>
+        <item>DF</item>
+        <item>ES</item>
+        <item>GO</item>
+        <item>MA</item>
+        <item>MG</item>
+        <item>MS</item>
+        <item>MT</item>
+        <item>PA</item>
+        <item>PB</item>
+        <item>PE</item>
+        <item>PI</item>
+        <item>PR</item>
+        <item>RJ</item>
+        <item>RN</item>
+        <item>RO</item>
+        <item>RR</item>
+        <item>RS</item>
+        <item>SC</item>
+        <item>SE</item>
+        <item>SP</item>
+        <item>TO</item>
+    </string-array>
 
 </resources>

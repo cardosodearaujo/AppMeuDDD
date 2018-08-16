@@ -74,7 +74,7 @@ public class DDDFragment extends Fragment implements RecyclerViewTouchListenerAp
             @Override
             public void onClick(View view){
                 if (idEdtDDD.getText().toString().equals("")){
-                    modal(getContext(),"Atenção!","Informe o Email do usuário!","OK");
+                    modal(getContext(),"Atenção!","Informe DDD!","OK");
                     idEdtDDD.requestFocus();
                     return;
                 }

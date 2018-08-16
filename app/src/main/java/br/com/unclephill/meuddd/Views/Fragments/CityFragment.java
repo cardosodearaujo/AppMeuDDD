@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 
 import java.util.List;
 
@@ -41,6 +42,7 @@ public class CityFragment extends Fragment implements RecyclerViewTouchListenerA
     private RecyclerView idRwDDDCidades;
     private Button idBtnCadastrar;
     private EditText idEdtCidade;
+    private Spinner idSpnUF;
 
     public CityFragment() {
 
@@ -64,7 +66,7 @@ public class CityFragment extends Fragment implements RecyclerViewTouchListenerA
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         this.idEdtCidade = (EditText) view.findViewById(R.id.idEdtCidade);
-
+        this.idSpnUF = (Spinner) view.findViewById(R.id.idSpnUF);
         this.idRwDDDCidades = (RecyclerView) view.findViewById(R.id.idRwDDDCidades);
         this.idRwDDDCidades.setHasFixedSize(true);
         this.idRwDDDCidades.addOnItemTouchListener(new RecyclerViewTouchListenerApp(getContext(),this.idRwDDDCidades,this));
@@ -75,7 +77,7 @@ public class CityFragment extends Fragment implements RecyclerViewTouchListenerA
             @Override
             public void onClick(View view){
                 if (idEdtCidade.getText().toString().equals("")){
-                    modal(getContext(),"Atenção!","Informe o Email do usuário!","OK");
+                    modal(getContext(),"Atenção!","Informe a cidade!","OK");
                     idEdtCidade.requestFocus();
                     return;
                 }
@@ -84,6 +86,7 @@ public class CityFragment extends Fragment implements RecyclerViewTouchListenerA
 
                 DDDCityObject dddCityObject = new DDDCityObject();
                 dddCityObject.setCidade(idEdtCidade.getText().toString());
+                dddCityObject.setUF(idSpnUF.getSelectedItem().toString());
                 geDDDFromAPI(dddCityObject);
             }
         });

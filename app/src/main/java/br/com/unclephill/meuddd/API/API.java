@@ -13,7 +13,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class API {
     private static final Retrofit RETROFIT = new Retrofit
             .Builder()
-            .baseUrl("http://hiruke.ddns.net/")
+            .baseUrl("http://meuddd.azurewebsites.net/")
             .addConverterFactory(GsonConverterFactory.create())
             .build();
 

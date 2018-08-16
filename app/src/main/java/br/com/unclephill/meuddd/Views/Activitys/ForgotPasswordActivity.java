@@ -32,7 +32,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
     }
 
     private void inflar(){
-        this.idEdtEmail = (EditText) findViewById(R.id.idEdtEmail);
+        this.idEdtEmail = (EditText) findViewById(R.id.idEdtEmailFP);
         this.idBtnEnviar = (Button) findViewById(R.id.idBtnEnviar);
     }
 
