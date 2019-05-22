@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">Meu DDD</string>
+    <string name="app_name">New: Meu DDD</string>
+    <string name="app_dev_name">New Outsourcing</string>
+    <string name="app_copyright">Copyright 2019 ©</string>
 
     <string name="activity_login_txwInformacao"><b>Informe suas credenciais abaixo:</b></string>
     <string name="activity_login_txwEsqueciSenha"><u>Esqueci minha senha</u></string>

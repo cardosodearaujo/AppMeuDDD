@@ -22,6 +22,7 @@ import java.util.List;
 
 import br.com.unclephill.meuddd.API.API;
 import br.com.unclephill.meuddd.Adapter.DDDCidadesAdapter;
+import br.com.unclephill.meuddd.App.FunctionsApp;
 import br.com.unclephill.meuddd.App.RecyclerViewTouchListenerApp;
 import br.com.unclephill.meuddd.Object.DDDCityObject;
 import br.com.unclephill.meuddd.R;
@@ -97,6 +98,7 @@ public class DDDFragment extends Fragment implements RecyclerViewTouchListenerAp
                         if (response.isSuccessful()){
                             if (response.body().size() > 0){
                                 idRwDDDCidades.setAdapter(new DDDCidadesAdapter(getContext(),response.body()));
+                                FunctionsApp.closeKeyboard(getContext(), (View)getActivity().findViewById(android.R.id.content));
                             }else{
                                 modal(getContext(),"Atenção!",
                                         "Não foi possivel carregar as cidades. Tente novamente!",

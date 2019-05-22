@@ -56,9 +56,9 @@
                 android:gravity="right|center">
 
                 <ImageButton
-                    android:layout_width="30dp"
-                    android:layout_height="27dp"
-                    android:background="@mipmap/ic_logout"
+                    android:layout_width="38dp"
+                    android:layout_height="40dp"
+                    android:background="@mipmap/ic_close"
                     android:gravity="right"
                     android:onClick="onClickLogOut" />
             </RelativeLayout>
@@ -94,6 +94,7 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     <TextView
+        android:visibility="invisible"
         android:id="@+id/idTxwNomeUsuario"
         android:layout_width="match_parent"
         android:layout_height="15dp"

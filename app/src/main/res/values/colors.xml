@@ -2,7 +2,7 @@
 <resources>
     <!--Cores do Sistema-->
     <color name = "corPrimaria">#03A9F4</color>
-    <color name = "corPrimariaEscura">#03A9F4</color>
+    <color name = "corPrimariaEscura">#0288d1</color>
     <color name = "corRealce">#FFAA00</color>
 
     <!--Minhas cores:-->
