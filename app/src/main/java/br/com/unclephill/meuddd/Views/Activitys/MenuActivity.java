@@ -25,6 +25,10 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,6 +43,7 @@ public class MenuActivity extends AppCompatActivity{
     private TabLayout idTabLayout;
     private ViewPager idViewPager;
     private TextView idTxwNomeUsuario;
+    private com.google.android.gms.ads.AdView idAdsView;
 
 
     @Override
@@ -56,6 +61,11 @@ public class MenuActivity extends AppCompatActivity{
 
         //this.idTxwNomeUsuario = (TextView) findViewById(R.id.idTxwNomeUsuario);
         //this.idTxwNomeUsuario.setText("Usuário: " + FunctionsApp.User.getNome());
+
+        this.idAdsView = findViewById(R.id.idAdsView);
+        MobileAds.initialize(MenuActivity.this, "@string/str_app_admob_id");
+        AdRequest adRequest = new AdRequest.Builder().build();
+        this.idAdsView.loadAd(adRequest);
 
     }
 

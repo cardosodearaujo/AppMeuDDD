@@ -13,6 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/str_app_admob_id" />
+
         <activity
             android:name="br.com.unclephill.meuddd.Views.Activitys.SplashActivity"
             android:screenOrientation="portrait">
